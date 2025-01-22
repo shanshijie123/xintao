@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>折磨页面</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 20px;
+        }
+        .torture {
+            color: red;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <p> <a href="https://www.chipfountain.com/" target="_blank" > <strong><big>折磨入口</strong></big></a> </p>
+    <div id="tortureContent" class="torture">
+        <!-- JavaScript将在这里插入内容 -->
+    </div>
+
+    <script>
+        function repeatTorture() {
+            var content = '';
+            for (var i = 0; i < 1000; i++) {
+                content += '<p> <img src="zww.png" alt="Smiley face" width="64" height="64"> 纯折磨 究极折磨 终极折磨王 纯折磨 究极折磨 终极折磨王 纯折磨 究极折磨 终极折磨王 纯折磨 究极折磨 终极折磨王 <img src="zww.png" alt="Smiley face" width="64" height="64"></p>';
+            }
+            document.getElementById('tortureContent').innerHTML = content;
+        }
+
+        repeatTorture();
+    </script>
+</body>
+</html>
